@@ -3,7 +3,7 @@ namespace models;
 class shvMail {
     public static function mailTo($email, $subject, $message)
     {
-        $message = "<html><body>$message</body></html>"; 	
+        $message = "<html><body>$message</body></html>";
         
         $header = "From: NO_NAME <no-reply@no_name.com>\r\n"; // отредачить
 		$header .= "Reply-To: no-reply@no_name.com\r\n"; // отредачить
