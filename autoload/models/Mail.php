@@ -5,8 +5,8 @@ class shvMail {
     {
         $message = "<html><body>$message</body></html>";
         
-        $header = "From: NO_NAME <no-reply@no_name.com>\r\n"; // отредачить
-		$header .= "Reply-To: no-reply@no_name.com\r\n"; // отредачить
+        $header = "From: $f3->get('site_name') <no-reply@$f3->get('domain')>\r\n";
+		$header .= "Reply-To: no-reply@$f3->get('domain')\r\n";
         $header .= "Content-Type: text/html; charset=utf-8\r\n";
         
         return mail($email,$subject,$message,$header);
@@ -14,7 +14,7 @@ class shvMail {
 
     public static function createMessage($data)
     {
-        $message = "<p>Мыло: $data[email]</p>"; // отредачить по требованию заказчика
+        $message = "<p>Email: <a href=\"mailto:$data[email]\">$data[email]</a></p>";
         return $message;
     }
 }

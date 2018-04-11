@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,eAGE,WAAa,CAGf,KACE,SACA,UACA,iCAAsC","file":"static/css/main.fc4e4345.css","sourcesContent":["html,\nbody,\n#app {\n  height: 100%;\n}\n\nbody {\n  margin: 0;\n  padding: 0;\n  font-family: 'Montserrat', sans-serif;\n}\n\n\n\n// WEBPACK FOOTER //\n// ./src/index.css"],"sourceRoot":""}

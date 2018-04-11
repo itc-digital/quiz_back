@@ -6,7 +6,7 @@ class Form {
     {
         $data = $f3->get('POST');
         $email = $f3->get('email');
-        $subject = "Новый e-mail"; // отредачить по требованию заказчика
+        $subject = "Новый e-mail :: $f3->get('domain')";
         $message = \models\Mail::createMessage($data);
         if (\models\Mail::mailTo($email, $subject, $message)) {
             $f3->status(200);
